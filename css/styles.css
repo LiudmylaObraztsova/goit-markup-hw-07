@@ -8,6 +8,12 @@
   --secondary-background: #f5f4fa;
   --border-color-card: #eeeeee;
   --footer-background: #2f303a;
+  --footer-form: (255, 255, 255, 0.3);
+  --secondary-footer-color: rgba(255, 255, 255, 0.6);
+  --background-description: rgba(47, 48, 58, 0.8);
+  --border-bottom: #ececec;
+  --backdrop-color: rgba(0, 0, 0, 0.1);
+  --border-input: rgba(33, 33, 33, 0.2);
   --animation-duration: 250ms;
   --animation-type: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -199,7 +205,7 @@ h5 {
   height: 600px;
   margin-left: auto;
   margin-right: auto;
-  background-color: #2f303a;
+  background-color: var(--footer-background);
   background-image: linear-gradient(
       to right,
       rgba(47, 48, 58, 0.4),
@@ -253,7 +259,7 @@ h5 {
 .features {
   display: flex;
   padding: 0;
-  margin: 0;
+  margin: 0 -15px;
 }
 
 .picture {
@@ -274,8 +280,8 @@ h5 {
   fill: currentColor;
 }
 
-.features .item + .item {
-  margin-left: 30px;
+.features .item {
+  margin: 0 15px;
 }
 
 .features .title {
@@ -290,6 +296,7 @@ h5 {
   line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
+  margin-bottom: 50px;
 }
 
 .visually-hidden {
@@ -329,14 +336,10 @@ h5 {
   padding-bottom: 94px;
 }
 
-.description-title {
-  margin-bottom: 50px;
-}
-
 .description {
   display: flex;
   margin-top: 0;
-  margin-bottom: 0;
+  margin: 0 -15px;
 }
 
 .description .item {
@@ -359,11 +362,11 @@ h5 {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--primary-white-color);
-  background-color: rgba(47, 48, 58, 0.8);
+  background-color: var(--background-description);
 }
 
-.description .item + .item {
-  margin-left: 30px;
+.description .item {
+  margin: 0 15px;
 }
 
 /* Секция-4 team */
@@ -375,6 +378,8 @@ h5 {
 }
 .team {
   display: flex;
+  padding: 0;
+  margin: 0 -15px;
 }
 
 .team-title {
@@ -391,15 +396,11 @@ h5 {
 
 .team .item {
   width: 270px;
-  margin-right: 30px;
+  margin: 0 15px;
 
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
-}
-
-.team .item:nth-child(4n) {
-  margin-right: 0;
 }
 
 .team .title {
@@ -483,6 +484,7 @@ h5 {
 .clients {
   display: flex;
   padding: 0;
+  margin: 0 -15px;
 }
 
 .clients-container .section-title {
@@ -517,11 +519,7 @@ h5 {
   padding: 0;
   width: 100%;
   height: 100%;
-  margin-right: 30px;
-}
-
-.clients-logo:last-child {
-  margin-right: 0;
+  margin: 0 15px;
 }
 
 .link-client {
@@ -531,7 +529,7 @@ h5 {
   align-items: center;
   justify-content: center;
   fill: currentColor;
-  border: 1px solid #afb1b8;
+  border: 1px solid var(--icon-color);
   border-radius: 4px;
   box-sizing: border-box;
 }
@@ -582,7 +580,7 @@ h5 {
 }
 
 .contacts-footer .link {
-  color: rgba(255, 255, 255, 0.6);
+  color: var(--secondary-footer-color);
 
   text-decoration: none;
   font-weight: 400;
@@ -667,15 +665,15 @@ h5 {
 .send-input {
   width: 358px;
   height: 50px;
-  background-color: #2f303a;
-  border: 1px solid rgba(255, 255, 255, 0.3);
+  background-color: var(--footer-background);
+  border: 1px solid var(--footer-form);
   box-sizing: border-box;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
   padding: 15px 256px 15px 16px;
   margin-right: 12px;
 
-  color: rgba(255, 255, 255, 0.6);
+  color: var(--secondary-footer-color);
 }
 
 .email-form input::placeholder {
@@ -716,7 +714,7 @@ h5 {
 
 /* css для портфолио */
 .portfolio {
-  border-bottom: 1px solid #ececec;
+  border-bottom: 1px solid var(--border-bottom);
 }
 
 .flex-section {
@@ -844,7 +842,7 @@ h5 {
 .border {
   padding: 20px 24px;
   background: var(--primary-white-color);
-  border: 1px solid #eeeeee;
+  border: 1px solid var(--border-color-card);
 }
 
 .title-second {
@@ -875,7 +873,7 @@ h5 {
   right: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.1);
+  background-color: var(--backdrop-color);
 }
 
 .modal {
@@ -905,8 +903,8 @@ h5 {
   width: 30px;
   height: 30px;
   padding: 0;
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  background-color: white;
+  border: 1px solid var(--backdrop-color);
+  background-color: var(--primary-white-color);
   border-radius: 50%;
   margin-left: auto;
   cursor: pointer;
@@ -925,7 +923,7 @@ h5 {
   text-align: center;
   letter-spacing: 0.03em;
 
-  color: #212121;
+  color: var(--title-text-color);
   margin-top: 0;
   margin-bottom: 12px;
   padding: 0;
@@ -947,13 +945,13 @@ h5 {
   margin-bottom: 4px;
   padding: 0;
 
-  color: #757575;
+  color: var(--primary-text-color);
 }
 
 .input {
   width: 100%;
   height: 40px;
-  border: 1px solid rgba(33, 33, 33, 0.2);
+  border: 1px solid var(--border-input);
   box-sizing: border-box;
   border-radius: 4px;
   padding: 11px 12px 11px 42px;
@@ -985,7 +983,7 @@ h5 {
   top: 50%;
   transform: translate(-50%, -50%);
   left: 21px;
-  fill: #212121;
+  fill: var(--title-text-color);
   transition: fill var(--animation-duration) var(--animation-type);
 }
 
@@ -994,7 +992,7 @@ h5 {
   height: 120px;
   cursor: pointer;
 
-  border: 1px solid rgba(33, 33, 33, 0.2);
+  border: 1px solid var(--border-input);
   box-sizing: border-box;
   border-radius: 4px;
   padding: 12px 16px;
@@ -1022,10 +1020,6 @@ h5 {
   display: flex;
   flex-direction: column;
   margin-bottom: 10px;
-}
-
-.contact-label:focus-within > .contact-icon {
-  background-color: pink;
 }
 
 .contact-label.area {
@@ -1058,14 +1052,14 @@ h5 {
   line-height: 1.71;
   letter-spacing: 0.03em;
 
-  color: #757575;
+  color: var(--primary-text-color);
 }
 
 .icon-check {
   display: inline-block;
   width: 16px;
   height: 15px;
-  border: 2px solid #000000;
+  border: 2px solid var(--logo-color);
   border-radius: 2px;
   margin-right: 8px;
 }
