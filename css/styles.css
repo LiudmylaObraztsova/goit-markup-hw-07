@@ -8,7 +8,7 @@
   --secondary-background: #f5f4fa;
   --border-color-card: #eeeeee;
   --footer-background: #2f303a;
-  --footer-form: (255, 255, 255, 0.3);
+  --footer-form: rgba(255, 255, 255, 0.3);
   --secondary-footer-color: rgba(255, 255, 255, 0.6);
   --background-description: rgba(47, 48, 58, 0.8);
   --border-bottom: #ececec;
@@ -16,6 +16,8 @@
   --border-input: rgba(33, 33, 33, 0.2);
   --animation-duration: 250ms;
   --animation-type: cubic-bezier(0.4, 0, 0.2, 1);
+  --primary-font-family: roboto, sans-serif;
+  --secondary-font-family: raleway;
 }
 
 html {
@@ -32,7 +34,7 @@ body {
   margin: 0;
   color: var(--primary-text-color);
   background-color: var(--primary-background-color);
-  font-family: roboto, sans-serif;
+  font-family: var(--primary-font-family);
 }
 
 img {
@@ -125,7 +127,7 @@ h5 {
   color: var(--logo-color);
 
   text-decoration: none;
-  font-family: raleway;
+  font-family: var(--secondary-font-family);
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
@@ -556,7 +558,7 @@ h5 {
 .logo-footer {
   color: var(--primary-white-color);
   text-decoration: none;
-  font-family: raleway;
+  font-family: var(--secondary-font-family);
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
@@ -1007,7 +1009,6 @@ h5 {
 }
 
 .contact-area textarea::placeholder {
-  font-family: roboto;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.14;
