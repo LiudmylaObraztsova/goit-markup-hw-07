@@ -876,7 +876,7 @@ h5 {
 
 .image-overlay__text {
   font-weight: 400;
-  font-size: 18;
+  font-size: 18px;
   line-height: 1.56;
   letter-spacing: 0.03em;
   color: #ffffff;
@@ -892,7 +892,7 @@ h5 {
 .image-overlay__title {
   color: #212121;
   font-weight: 700;
-  font-size: 18;
+  font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
   margin-bottom: 4px;
