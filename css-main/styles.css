@@ -18,6 +18,31 @@
   --animation-type: cubic-bezier(0.4, 0, 0.2, 1);
   --primary-font-family: roboto, sans-serif;
   --secondary-font-family: raleway;
+
+  --primary-font-size: 14px;
+  --logo-font-size: 26px;
+  --hero-font-size: 44px;
+  --modal-sec-font-size: 20px;
+  --modal-primary-font-size: 12px;
+  --title-font-size: 36px;
+  --secondary-font-size: 16px;
+  --overlay-font-size: 18;
+
+  --primary-line-height: 1.14;
+  --hero-title-line-height: 1.36;
+  --line-height-logo: 1.19;
+  --title-line-height: 1.17;
+  --button-line-height: 1.87;
+  --address-line-height: 1.71;
+  --card-title-line-height: 2;
+  --placeholder-line-height: 1.25;
+  --modal-title-line-height: 1.15;
+  --overlay-line-height: 1.56;
+
+  --primary-font-weight: 400;
+  --secondary-font-weight: 500;
+  --third-font-weight: 700;
+  --hero-font-weight: 900;
 }
 
 html {
@@ -118,7 +143,7 @@ h5 {
 .contacts {
   display: flex;
   font-weight: 500;
-  font-size: 14px;
+  font-size: var(--primary-font-size: 14px);
   line-height: 1.14;
   letter-spacing: 0.02em;
 }
@@ -130,7 +155,7 @@ h5 {
   padding-bottom: 32px;
   color: var(--title-text-color);
   text-decoration: none;
-  transition: color var(--animation-duration) var(--animation-type);
+  transition: color var(--animation-duration var(--animation-type);
 }
 
 .site-nav__link:hover,
@@ -878,7 +903,7 @@ h5 {
 .modal__text {
   font-weight: 700;
   font-size: 20px;
-  line-height: 23px;
+  line-height: 1.15px;
   text-align: center;
   letter-spacing: 0.03em;
 
@@ -1027,14 +1052,6 @@ h5 {
   background-origin: border-box;
   transition: background-color var(--animation-duration) var(--animation-type);
 }
-
-/* .checkbox {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 30px;
-  padding: 0;
-} */
 
 .checkbox__button {
   display: block;
